@@ -4,14 +4,11 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose');
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(bodyParser());
 
 // Add database: mongoose
-var prodDB = "mongodb://<dbuser>:<dbpassword>@ds063909.mongolab.com:63909/pulsebond";
-var devDB = "mongodb://localhost/pulsebond";
-
-mongoose.connect(devDB);
+mongoose.connect(process.env.mongolab_uri);
 
 var User = mongoose.model('User', { email: String });
 
@@ -39,10 +36,6 @@ app.post('/signup', function (req, res, next) {
             res.send({ success: true });
         });
     });
-
-
-
 });
 
-
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
