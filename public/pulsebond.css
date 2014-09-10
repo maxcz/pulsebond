@@ -29,16 +29,11 @@ BODY
 }
 #pulsebondimage
 {
-	float: left;
 	vertical-align: middle;
 	margin-right: 19px;
 	margin-top: 7px;
 	margin-left: 15px;
-}
-#pulsebondname
-{
-	float: left;
-	vertical-align: middle;
+	white-space: nowrap;
 }
 #container
 {
@@ -70,7 +65,7 @@ BODY
 }
 .top-content P
 {
-	font-family: "Segoe UI";
+	font-family: HelveticaNeueW02-55Roma, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bottom-content
 {
@@ -78,6 +73,11 @@ BODY
 	bottom: 23%;
 	text-align: center;
 	width: 100%;
+}
+.show-email
+{
+	position: relative;
+	left: -40%;
 }
 #emailInput
 {
