@@ -1,11 +1,4 @@
-@font-face {
- font-family: 'Lucida Grande';
-  src: url('font/Lucida Grande.ttf');
-}
-@font-face {
- font-family: 'Myriad Apple Text';
-  src: url('font/Myriad Apple text.ttf');
-}
+
 HTML
 {
 	background-image: url('images/aaaa.jpg');
@@ -24,8 +17,6 @@ BODY
 {
 	background-color: rgba(20, 20, 20, 0.5);
 	line-height: 0px;
-	font-size: 35px;
-	font-family: "Segoe UI";
 	color: #FFF;
 	position: fixed;
 	width: 100%;
@@ -41,6 +32,8 @@ BODY
 	margin-right: 19px;
 	margin-left: 15px;
 	white-space: nowrap;
+    width: 100%;
+    height: auto;
 }
 #brand
 {
@@ -49,12 +42,17 @@ BODY
 }
 #container
 {
-	font-family: "Lucida Grande", "Myriad Apple Text", Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 18px;
 }
+
+h1{
+    font-size: 60px;
+}
+
 #banner
 {
-	font-family: "Lucida Grande", "Myriad Apple Text", Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 20px;
 	background-color: rgba(34, 204, 136, 0.4);
 	box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.8);
@@ -69,7 +67,7 @@ BODY
 .top-content
 {
 	text-align: center;
-	top: 22%;
+	top: 18%;
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -77,8 +75,9 @@ BODY
 }
 .top-content P
 {
-	font-family: "Lucida Grande", "Myriad Apple Text", Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 }
+
 .bottom-content
 {
 	position: absolute;
@@ -86,11 +85,17 @@ BODY
 	text-align: center;
 	width: 100%;
 }
+
+#content{
+    padding-top: 10px;
+}
+
 .show-email
 {
 	position: relative;
 	left: -40%;
 }
+
 #emailInput
 {
 	background: 0 0;
